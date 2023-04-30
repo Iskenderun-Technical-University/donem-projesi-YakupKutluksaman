@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ALEL_Hastane_OtomasyonuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,7 +70,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet.xsc">
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ALEL_Hastane_OtomasyonuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet.xss">
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +95,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor-PNG-Picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor-PNG-Picture1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-infectious-disease-infection-norovirus-influenza-sick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-business-secretary-work-office-update-laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opera Anlık Görüntü_2023-04-30_211133_www.canva.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALEL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALEL %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALEL %284%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-black-and-silver-stethoscope-stethoscope-cardiology-medicine-physician-pediatrics-stetoskop-miscellaneous-service-medical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-logo-brand-font-heart-of-love-red-broken-line-angle-text-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-landline-office-old-phone-telephone-office-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atendimento-24-horas-Png-1024x1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\648-6487849_24-hours-phone-service-24-7-phone-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÖZEL ALEL HASTANESİ.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÖZEL ALEL HASTANESİ %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÖZEL ALEL HASTANESİ %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÖZEL ALEL HASTANESİ %283%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÖZEL ALEL HASTANESİ %282%291.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,5 +16,10 @@ namespace ALEL_Hastane_Otomasyonu_
         {
             InitializeComponent();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
