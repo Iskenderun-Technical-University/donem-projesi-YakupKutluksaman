@@ -193,6 +193,26 @@ namespace ALEL_Hastane_Otomasyonu_.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap ÖZEL_ALEL_HASTANESİ__3_1 {
+            get {
+                object obj = ResourceManager.GetObject("ÖZEL ALEL HASTANESİ (3)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ÖZEL_ALEL_HASTANESİ__3_2 {
+            get {
+                object obj = ResourceManager.GetObject("ÖZEL ALEL HASTANESİ (3)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap png_clipart_infectious_disease_infection_norovirus_influenza_sick {
             get {
                 object obj = ResourceManager.GetObject("png-clipart-infectious-disease-infection-norovirus-influenza-sick", resourceCulture);

@@ -139,6 +139,9 @@
   <data name="ALEL (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ALEL (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ÖZEL ALEL HASTANESİ (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÖZEL ALEL HASTANESİ (3)1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Atendimento-24-horas-Png-1024x1024" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Atendimento-24-horas-Png-1024x1024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,14 +157,17 @@
   <data name="png-transparent-landline-office-old-phone-telephone-office-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-landline-office-old-phone-telephone-office-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Doctor-PNG-Picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Doctor-PNG-Picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="648-6487849_24-hours-phone-service-24-7-phone-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\648-6487849_24-hours-phone-service-24-7-phone-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ÖZEL ALEL HASTANESİ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ÖZEL ALEL HASTANESİ.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Doctor-PNG-Picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Doctor-PNG-Picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ÖZEL ALEL HASTANESİ (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÖZEL ALEL HASTANESİ (2)1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-clipart-infectious-disease-infection-norovirus-influenza-sick" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-infectious-disease-infection-norovirus-influenza-sick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +175,7 @@
   <data name="ÖZEL ALEL HASTANESİ (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ÖZEL ALEL HASTANESİ (3).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ÖZEL ALEL HASTANESİ (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ÖZEL ALEL HASTANESİ (2)1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ÖZEL ALEL HASTANESİ (3)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÖZEL ALEL HASTANESİ (3)2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

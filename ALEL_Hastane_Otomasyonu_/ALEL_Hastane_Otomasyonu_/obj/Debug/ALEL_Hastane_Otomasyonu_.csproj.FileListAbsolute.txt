@@ -11,9 +11,11 @@ C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\bi
 C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\bin\Debug\ALEL_Hastane_Otomasyonu_.exe
 C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\bin\Debug\ALEL_Hastane_Otomasyonu_.pdb
 C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.csproj.AssemblyReference.cache
-C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.Form1.resources
 C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.Properties.Resources.resources
 C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.csproj.GenerateResource.cache
 C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.csproj.CoreCompileInputs.cache
 C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.exe
 C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.pdb
+C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.FRMHastaGiris.resources
+C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.FRMGirisler.resources
+C:\Users\yakup\Desktop\ALEL\ALEL_Hastane_Otomasyonu_\ALEL_Hastane_Otomasyonu_\obj\Debug\ALEL_Hastane_Otomasyonu_.FRMHastaKayit.resources

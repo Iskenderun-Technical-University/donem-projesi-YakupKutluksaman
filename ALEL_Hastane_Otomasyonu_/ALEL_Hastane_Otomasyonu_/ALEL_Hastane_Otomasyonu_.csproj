@@ -51,16 +51,67 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ALEL_Hastane_OtomasyonuDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FRMDoktorDetay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FRMDoktorDetay.Designer.cs">
+      <DependentUpon>FRMDoktorDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMGirisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMGirisler.Designer.cs">
+      <DependentUpon>FRMGirisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMHastaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMHastaDetay.Designer.cs">
+      <DependentUpon>FRMHastaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMHastaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMHastaGiris.Designer.cs">
+      <DependentUpon>FRMHastaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDoktorGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDoktorGiris.Designer.cs">
+      <DependentUpon>FRMDoktorGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMHastaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMHastaKayit.Designer.cs">
+      <DependentUpon>FRMHastaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSekreterGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSekreterGiris.Designer.cs">
+      <DependentUpon>FRMSekreterGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FRMDoktorDetay.resx">
+      <DependentUpon>FRMDoktorDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDoktorGiris.resx">
+      <DependentUpon>FRMDoktorGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMGirisler.resx">
+      <DependentUpon>FRMGirisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMHastaDetay.resx">
+      <DependentUpon>FRMHastaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMHastaGiris.resx">
+      <DependentUpon>FRMHastaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMHastaKayit.resx">
+      <DependentUpon>FRMHastaKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -149,6 +200,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ÖZEL ALEL HASTANESİ %282%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÖZEL ALEL HASTANESİ %283%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÖZEL ALEL HASTANESİ %283%292.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
