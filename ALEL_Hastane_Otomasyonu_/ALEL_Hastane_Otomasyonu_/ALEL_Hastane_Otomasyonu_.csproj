@@ -51,17 +51,47 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ALEL_Hastane_OtomasyonuDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FRMBransPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMBransPanel.Designer.cs">
+      <DependentUpon>FRMBransPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDoktorBİlgiDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDoktorBİlgiDüzenle.Designer.cs">
+      <DependentUpon>FRMDoktorBİlgiDüzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMDoktorDetay.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRMDoktorDetay.Designer.cs">
       <DependentUpon>FRMDoktorDetay.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDoktorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorPanel.Designer.cs">
+      <DependentUpon>FrmDoktorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDuyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDuyurular.Designer.cs">
+      <DependentUpon>FRMDuyurular.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMGirisler.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRMGirisler.Designer.cs">
       <DependentUpon>FRMGirisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMHastaBilgiDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMHastaBilgiDüzenle.Designer.cs">
+      <DependentUpon>FRMHastaBilgiDüzenle.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMHastaDetay.cs">
       <SubType>Form</SubType>
@@ -87,6 +117,18 @@
     <Compile Include="FRMHastaKayit.Designer.cs">
       <DependentUpon>FRMHastaKayit.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMRandevuListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRandevuListesi.Designer.cs">
+      <DependentUpon>FRMRandevuListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSekreterDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSekreterDetay.Designer.cs">
+      <DependentUpon>FRMSekreterDetay.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMSekreterGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,14 +137,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRMBransPanel.resx">
+      <DependentUpon>FRMBransPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDoktorBİlgiDüzenle.resx">
+      <DependentUpon>FRMDoktorBİlgiDüzenle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMDoktorDetay.resx">
       <DependentUpon>FRMDoktorDetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMDoktorGiris.resx">
       <DependentUpon>FRMDoktorGiris.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorPanel.resx">
+      <DependentUpon>FrmDoktorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDuyurular.resx">
+      <DependentUpon>FRMDuyurular.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMGirisler.resx">
       <DependentUpon>FRMGirisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMHastaBilgiDüzenle.resx">
+      <DependentUpon>FRMHastaBilgiDüzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMHastaDetay.resx">
       <DependentUpon>FRMHastaDetay.cs</DependentUpon>
@@ -112,6 +169,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMHastaKayit.resx">
       <DependentUpon>FRMHastaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRandevuListesi.resx">
+      <DependentUpon>FRMRandevuListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSekreterDetay.resx">
+      <DependentUpon>FRMSekreterDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSekreterGiris.resx">
+      <DependentUpon>FRMSekreterGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

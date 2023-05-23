@@ -16,5 +16,45 @@ namespace ALEL_Hastane_Otomasyonu_
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void BtnGiris_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtSifre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MskTC_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,16 +30,16 @@ namespace ALEL_Hastane_Otomasyonu_
         private void InitializeComponent()
         {
             this.BtnGiris = new System.Windows.Forms.Button();
-            this.TxtSifre = new System.Windows.Forms.TextBox();
+            this.txtsoyisim = new System.Windows.Forms.TextBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtisim = new System.Windows.Forms.TextBox();
+            this.mskTlf = new System.Windows.Forms.MaskedTextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
+            this.cbmCinsiyet = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -55,12 +55,12 @@ namespace ALEL_Hastane_Otomasyonu_
             this.BtnGiris.Text = "Kayıt Ol";
             this.BtnGiris.UseVisualStyleBackColor = true;
             // 
-            // TxtSifre
+            // txtsoyisim
             // 
-            this.TxtSifre.Location = new System.Drawing.Point(215, 153);
-            this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.Size = new System.Drawing.Size(159, 29);
-            this.TxtSifre.TabIndex = 8;
+            this.txtsoyisim.Location = new System.Drawing.Point(215, 153);
+            this.txtsoyisim.Name = "txtsoyisim";
+            this.txtsoyisim.Size = new System.Drawing.Size(159, 29);
+            this.txtsoyisim.TabIndex = 8;
             // 
             // MskTC
             // 
@@ -108,38 +108,38 @@ namespace ALEL_Hastane_Otomasyonu_
             this.label4.TabIndex = 10;
             this.label4.Text = "TC Kimlik Numarası:";
             // 
-            // textBox1
+            // txtisim
             // 
-            this.textBox1.Location = new System.Drawing.Point(215, 118);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 29);
-            this.textBox1.TabIndex = 12;
+            this.txtisim.Location = new System.Drawing.Point(215, 118);
+            this.txtisim.Name = "txtisim";
+            this.txtisim.Size = new System.Drawing.Size(159, 29);
+            this.txtisim.TabIndex = 12;
             // 
-            // maskedTextBox1
+            // mskTlf
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(214, 223);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(160, 29);
-            this.maskedTextBox1.TabIndex = 13;
+            this.mskTlf.Location = new System.Drawing.Point(214, 223);
+            this.mskTlf.Mask = "(999) 000-0000";
+            this.mskTlf.Name = "mskTlf";
+            this.mskTlf.Size = new System.Drawing.Size(160, 29);
+            this.mskTlf.TabIndex = 13;
             // 
-            // textBox2
+            // txtSifre
             // 
-            this.textBox2.Location = new System.Drawing.Point(214, 258);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 29);
-            this.textBox2.TabIndex = 14;
+            this.txtSifre.Location = new System.Drawing.Point(214, 258);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(159, 29);
+            this.txtSifre.TabIndex = 14;
             // 
-            // comboBox1
+            // cbmCinsiyet
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbmCinsiyet.FormattingEnabled = true;
+            this.cbmCinsiyet.Items.AddRange(new object[] {
             "Erkek",
             "Kadın"});
-            this.comboBox1.Location = new System.Drawing.Point(215, 294);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 31);
-            this.comboBox1.TabIndex = 15;
+            this.cbmCinsiyet.Location = new System.Drawing.Point(215, 294);
+            this.cbmCinsiyet.Name = "cbmCinsiyet";
+            this.cbmCinsiyet.Size = new System.Drawing.Size(160, 31);
+            this.cbmCinsiyet.TabIndex = 15;
             // 
             // label5
             // 
@@ -178,14 +178,14 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cbmCinsiyet);
+            this.Controls.Add(this.txtSifre);
+            this.Controls.Add(this.mskTlf);
+            this.Controls.Add(this.txtisim);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BtnGiris);
-            this.Controls.Add(this.TxtSifre);
+            this.Controls.Add(this.txtsoyisim);
             this.Controls.Add(this.MskTC);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -202,16 +202,16 @@ namespace ALEL_Hastane_Otomasyonu_
         #endregion
 
         private System.Windows.Forms.Button BtnGiris;
-        private System.Windows.Forms.TextBox TxtSifre;
+        private System.Windows.Forms.TextBox txtsoyisim;
         private System.Windows.Forms.MaskedTextBox MskTC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtisim;
+        private System.Windows.Forms.MaskedTextBox mskTlf;
+        private System.Windows.Forms.TextBox txtSifre;
+        private System.Windows.Forms.ComboBox cbmCinsiyet;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
