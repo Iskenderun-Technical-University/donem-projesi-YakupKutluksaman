@@ -33,9 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnSekreterGiris = new System.Windows.Forms.Button();
+            this.BtnHastaGiris = new System.Windows.Forms.Button();
+            this.btnDoktorGiris = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,41 +79,44 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // BtnSekreterGiris
             // 
-            this.button3.BackgroundImage = global::ALEL_Hastane_Otomasyonu_.Properties.Resources._648_6487849_24_hours_phone_service_24_7_phone_icon;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(438, 313);
-            this.button3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(205, 132);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnSekreterGiris.BackgroundImage = global::ALEL_Hastane_Otomasyonu_.Properties.Resources._648_6487849_24_hours_phone_service_24_7_phone_icon;
+            this.BtnSekreterGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSekreterGiris.Location = new System.Drawing.Point(438, 313);
+            this.BtnSekreterGiris.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.BtnSekreterGiris.Name = "BtnSekreterGiris";
+            this.BtnSekreterGiris.Size = new System.Drawing.Size(205, 132);
+            this.BtnSekreterGiris.TabIndex = 2;
+            this.BtnSekreterGiris.UseVisualStyleBackColor = true;
+            this.BtnSekreterGiris.Click += new System.EventHandler(this.BtnSekreterGiris_Click);
             // 
-            // button2
+            // BtnHastaGiris
             // 
-            this.button2.BackgroundImage = global::ALEL_Hastane_Otomasyonu_.Properties.Resources.png_transparent_logo_brand_font_heart_of_love_red_broken_line_angle_text_hearts;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(223, 313);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(205, 132);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnHastaGiris.BackgroundImage = global::ALEL_Hastane_Otomasyonu_.Properties.Resources.png_transparent_logo_brand_font_heart_of_love_red_broken_line_angle_text_hearts;
+            this.BtnHastaGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnHastaGiris.Location = new System.Drawing.Point(223, 313);
+            this.BtnHastaGiris.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.BtnHastaGiris.Name = "BtnHastaGiris";
+            this.BtnHastaGiris.Size = new System.Drawing.Size(205, 132);
+            this.BtnHastaGiris.TabIndex = 1;
+            this.BtnHastaGiris.UseVisualStyleBackColor = true;
+            this.BtnHastaGiris.Click += new System.EventHandler(this.BtnHastaGiris_Click);
             // 
-            // button1
+            // btnDoktorGiris
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.BackgroundImage = global::ALEL_Hastane_Otomasyonu_.Properties.Resources.png_transparent_black_and_silver_stethoscope_stethoscope_cardiology_medicine_physician_pediatrics_stetoskop_miscellaneous_service_medical;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(8, 313);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 132);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDoktorGiris.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDoktorGiris.BackgroundImage = global::ALEL_Hastane_Otomasyonu_.Properties.Resources.png_transparent_black_and_silver_stethoscope_stethoscope_cardiology_medicine_physician_pediatrics_stetoskop_miscellaneous_service_medical;
+            this.btnDoktorGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDoktorGiris.Location = new System.Drawing.Point(8, 313);
+            this.btnDoktorGiris.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnDoktorGiris.Name = "btnDoktorGiris";
+            this.btnDoktorGiris.Size = new System.Drawing.Size(205, 132);
+            this.btnDoktorGiris.TabIndex = 0;
+            this.btnDoktorGiris.UseVisualStyleBackColor = false;
+            this.btnDoktorGiris.Click += new System.EventHandler(this.btnDoktorGiris_Click);
             // 
-            // Form1
+            // FRMGirisler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,14 +128,15 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnSekreterGiris);
+            this.Controls.Add(this.BtnHastaGiris);
+            this.Controls.Add(this.btnDoktorGiris);
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "FRMGirisler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Özel ALEL Hastanesi";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -145,9 +149,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnSekreterGiris;
+        private System.Windows.Forms.Button BtnHastaGiris;
+        private System.Windows.Forms.Button btnDoktorGiris;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

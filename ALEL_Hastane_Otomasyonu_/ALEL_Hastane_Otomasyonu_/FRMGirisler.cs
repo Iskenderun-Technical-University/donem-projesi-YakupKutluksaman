@@ -21,5 +21,26 @@ namespace ALEL_Hastane_Otomasyonu_
         {
 
         }
+
+        private void BtnHastaGiris_Click(object sender, EventArgs e)
+        {
+            FRMHastaGiris fr = new FRMHastaGiris();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void btnDoktorGiris_Click(object sender, EventArgs e)
+        {
+            FRMDoktorGiris fr = new FRMDoktorGiris();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void BtnSekreterGiris_Click(object sender, EventArgs e)
+        {
+            FRMSekreterGiris fr = new FRMSekreterGiris();
+            fr.Show();
+            this.Hide();
+        }
     }
 }

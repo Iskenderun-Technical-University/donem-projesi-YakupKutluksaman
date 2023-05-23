@@ -29,7 +29,8 @@ namespace ALEL_Hastane_Otomasyonu_
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnGiris = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMHastaKayit));
+            this.BtnKayıt = new System.Windows.Forms.Button();
             this.txtsoyisim = new System.Windows.Forms.TextBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,21 +47,23 @@ namespace ALEL_Hastane_Otomasyonu_
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // BtnGiris
+            // BtnKayıt
             // 
-            this.BtnGiris.Location = new System.Drawing.Point(216, 331);
-            this.BtnGiris.Name = "BtnGiris";
-            this.BtnGiris.Size = new System.Drawing.Size(159, 32);
-            this.BtnGiris.TabIndex = 9;
-            this.BtnGiris.Text = "Kayıt Ol";
-            this.BtnGiris.UseVisualStyleBackColor = true;
+            this.BtnKayıt.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnKayıt.Location = new System.Drawing.Point(216, 331);
+            this.BtnKayıt.Name = "BtnKayıt";
+            this.BtnKayıt.Size = new System.Drawing.Size(159, 32);
+            this.BtnKayıt.TabIndex = 7;
+            this.BtnKayıt.Text = "Kayıt Ol";
+            this.BtnKayıt.UseVisualStyleBackColor = true;
+            this.BtnKayıt.Click += new System.EventHandler(this.BtnKayıt_Click);
             // 
             // txtsoyisim
             // 
             this.txtsoyisim.Location = new System.Drawing.Point(215, 153);
             this.txtsoyisim.Name = "txtsoyisim";
             this.txtsoyisim.Size = new System.Drawing.Size(159, 29);
-            this.txtsoyisim.TabIndex = 8;
+            this.txtsoyisim.TabIndex = 2;
             // 
             // MskTC
             // 
@@ -68,7 +71,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(160, 29);
-            this.MskTC.TabIndex = 7;
+            this.MskTC.TabIndex = 3;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // label2
@@ -88,7 +91,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.label1.Size = new System.Drawing.Size(54, 23);
             this.label1.TabIndex = 5;
             this.label1.Text = "İsim:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+           // this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -113,7 +116,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.txtisim.Location = new System.Drawing.Point(215, 118);
             this.txtisim.Name = "txtisim";
             this.txtisim.Size = new System.Drawing.Size(159, 29);
-            this.txtisim.TabIndex = 12;
+            this.txtisim.TabIndex = 1;
             // 
             // mskTlf
             // 
@@ -121,14 +124,14 @@ namespace ALEL_Hastane_Otomasyonu_
             this.mskTlf.Mask = "(999) 000-0000";
             this.mskTlf.Name = "mskTlf";
             this.mskTlf.Size = new System.Drawing.Size(160, 29);
-            this.mskTlf.TabIndex = 13;
+            this.mskTlf.TabIndex = 4;
             // 
             // txtSifre
             // 
             this.txtSifre.Location = new System.Drawing.Point(214, 258);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(159, 29);
-            this.txtSifre.TabIndex = 14;
+            this.txtSifre.TabIndex = 5;
             // 
             // cbmCinsiyet
             // 
@@ -139,7 +142,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.cbmCinsiyet.Location = new System.Drawing.Point(215, 294);
             this.cbmCinsiyet.Name = "cbmCinsiyet";
             this.cbmCinsiyet.Size = new System.Drawing.Size(160, 31);
-            this.cbmCinsiyet.TabIndex = 15;
+            this.cbmCinsiyet.TabIndex = 6;
             // 
             // label5
             // 
@@ -171,8 +174,10 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // FRMHastaKayit
             // 
+            this.AcceptButton = this.BtnKayıt;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(425, 389);
             this.Controls.Add(this.pictureBox1);
@@ -184,14 +189,17 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Controls.Add(this.txtisim);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.BtnGiris);
+            this.Controls.Add(this.BtnKayıt);
             this.Controls.Add(this.txtsoyisim);
             this.Controls.Add(this.MskTC);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
             this.Name = "FRMHastaKayit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMHastaKayit";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -201,7 +209,7 @@ namespace ALEL_Hastane_Otomasyonu_
 
         #endregion
 
-        private System.Windows.Forms.Button BtnGiris;
+        private System.Windows.Forms.Button BtnKayıt;
         private System.Windows.Forms.TextBox txtsoyisim;
         private System.Windows.Forms.MaskedTextBox MskTC;
         private System.Windows.Forms.Label label2;

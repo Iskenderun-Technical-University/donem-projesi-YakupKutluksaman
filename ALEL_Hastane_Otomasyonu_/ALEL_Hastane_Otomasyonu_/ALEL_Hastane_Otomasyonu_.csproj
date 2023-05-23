@@ -51,6 +51,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ALEL_Hastane_OtomasyonuDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ALEL_Hastane_OtomasyonuDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ALEL_Hastane_OtomasyonuDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ALEL_Hastane_OtomasyonuDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FRMBransPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +152,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
     <EmbeddedResource Include="FRMBransPanel.resx">
       <DependentUpon>FRMBransPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +215,39 @@
     </None>
     <None Include="ALEL_Hastane_OtomasyonuDataSet.xss">
       <DependentUpon>ALEL_Hastane_OtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet1.xsc">
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ALEL_Hastane_OtomasyonuDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet1.xss">
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet2.xsc">
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ALEL_Hastane_OtomasyonuDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet2.xss">
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet3.xsc">
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ALEL_Hastane_OtomasyonuDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ALEL_Hastane_OtomasyonuDataSet3.xss">
+      <DependentUpon>ALEL_Hastane_OtomasyonuDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

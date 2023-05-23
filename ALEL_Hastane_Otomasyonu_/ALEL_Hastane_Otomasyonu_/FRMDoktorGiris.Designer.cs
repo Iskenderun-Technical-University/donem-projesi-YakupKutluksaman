@@ -29,6 +29,7 @@ namespace ALEL_Hastane_Otomasyonu_
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMDoktorGiris));
             this.label3 = new System.Windows.Forms.Label();
             this.KayitOl = new System.Windows.Forms.LinkLabel();
             this.BtnGiris = new System.Windows.Forms.Button();
@@ -116,6 +117,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // FRMDoktorGiris
             // 
+            this.AcceptButton = this.BtnGiris;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -129,7 +131,8 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FRMDoktorGiris";
             this.Text = "FRMDoktorGiris";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

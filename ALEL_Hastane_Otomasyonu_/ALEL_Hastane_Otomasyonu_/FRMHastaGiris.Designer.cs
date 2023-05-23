@@ -29,6 +29,7 @@ namespace ALEL_Hastane_Otomasyonu_
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMHastaGiris));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
@@ -73,6 +74,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(159, 31);
             this.TxtSifre.TabIndex = 3;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // BtnGiris
             // 
@@ -82,6 +84,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.BtnGiris.TabIndex = 4;
             this.BtnGiris.Text = "Giriş Yap";
             this.BtnGiris.UseVisualStyleBackColor = true;
+            this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
             // 
             // KayitOl
             // 
@@ -92,6 +95,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.KayitOl.TabIndex = 5;
             this.KayitOl.TabStop = true;
             this.KayitOl.Text = "Kayıt Ol";
+            this.KayitOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.KayitOl_LinkClicked);
             // 
             // label3
             // 
@@ -115,6 +119,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // FRMHastaGiris
             // 
+            this.AcceptButton = this.BtnGiris;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -129,7 +134,8 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FRMHastaGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMHastaGiris";
