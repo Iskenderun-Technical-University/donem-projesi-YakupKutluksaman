@@ -29,6 +29,7 @@ namespace ALEL_Hastane_Otomasyonu_
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMHastaBilgiDüzenle));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -83,14 +84,14 @@ namespace ALEL_Hastane_Otomasyonu_
             this.cbmCinsiyet.Location = new System.Drawing.Point(231, 310);
             this.cbmCinsiyet.Name = "cbmCinsiyet";
             this.cbmCinsiyet.Size = new System.Drawing.Size(160, 31);
-            this.cbmCinsiyet.TabIndex = 29;
+            this.cbmCinsiyet.TabIndex = 6;
             // 
             // txtSifre
             // 
             this.txtSifre.Location = new System.Drawing.Point(230, 274);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(159, 29);
-            this.txtSifre.TabIndex = 28;
+            this.txtSifre.TabIndex = 5;
             // 
             // mskTlf
             // 
@@ -98,14 +99,14 @@ namespace ALEL_Hastane_Otomasyonu_
             this.mskTlf.Mask = "(999) 000-0000";
             this.mskTlf.Name = "mskTlf";
             this.mskTlf.Size = new System.Drawing.Size(160, 29);
-            this.mskTlf.TabIndex = 27;
+            this.mskTlf.TabIndex = 4;
             // 
             // txtisim
             // 
             this.txtisim.Location = new System.Drawing.Point(231, 134);
             this.txtisim.Name = "txtisim";
             this.txtisim.Size = new System.Drawing.Size(159, 29);
-            this.txtisim.TabIndex = 26;
+            this.txtisim.TabIndex = 1;
             // 
             // label3
             // 
@@ -130,16 +131,17 @@ namespace ALEL_Hastane_Otomasyonu_
             this.BtnGuncelle.Location = new System.Drawing.Point(232, 347);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(159, 32);
-            this.BtnGuncelle.TabIndex = 23;
-            this.BtnGuncelle.Text = "Kayıt Ol";
+            this.BtnGuncelle.TabIndex = 7;
+            this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // txtsoyisim
             // 
             this.txtsoyisim.Location = new System.Drawing.Point(231, 169);
             this.txtsoyisim.Name = "txtsoyisim";
             this.txtsoyisim.Size = new System.Drawing.Size(159, 29);
-            this.txtsoyisim.TabIndex = 22;
+            this.txtsoyisim.TabIndex = 2;
             // 
             // MskTC
             // 
@@ -147,7 +149,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(160, 29);
-            this.MskTC.TabIndex = 21;
+            this.MskTC.TabIndex = 3;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // label2
@@ -170,8 +172,10 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // FRMHastaBilgiDüzenle
             // 
+            this.AcceptButton = this.BtnGuncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(428, 398);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
@@ -188,9 +192,11 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FRMHastaBilgiDüzenle";
-            this.Text = "FRMHastaBilgiDüzenle";
+            this.Text = "Bilgi Güncelleme";
+            this.Load += new System.EventHandler(this.FRMHastaBilgiDüzenle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

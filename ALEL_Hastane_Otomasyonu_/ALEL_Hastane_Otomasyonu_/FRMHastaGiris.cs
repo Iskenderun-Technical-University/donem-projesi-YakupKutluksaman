@@ -34,6 +34,7 @@ namespace ALEL_Hastane_Otomasyonu_
             if(dr.Read())
             {
                 FRMHastaDetay fr = new FRMHastaDetay();
+                fr.tc = MskTC.Text; //hasta deyat formunda hasta tc ye tc kimlik numarasını taşıyoruz.
                 fr.Show();
                 this.Hide();
             }
@@ -42,6 +43,11 @@ namespace ALEL_Hastane_Otomasyonu_
                 MessageBox.Show("Hatalı TC & Şifre");
             }
 
+
+        }
+
+        private void FRMHastaGiris_Load(object sender, EventArgs e)
+        {
 
         }
     }

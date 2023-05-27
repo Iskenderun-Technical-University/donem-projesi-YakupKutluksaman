@@ -139,6 +139,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Name = "FRMHastaGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMHastaGiris";
+            this.Load += new System.EventHandler(this.FRMHastaGiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
