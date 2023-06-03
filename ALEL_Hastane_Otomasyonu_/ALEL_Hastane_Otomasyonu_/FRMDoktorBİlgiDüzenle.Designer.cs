@@ -29,6 +29,7 @@ namespace ALEL_Hastane_Otomasyonu_
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMDoktorBİlgiDüzenle));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtSifre = new System.Windows.Forms.TextBox();
@@ -151,7 +152,9 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 359);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(395, 359);
             this.Controls.Add(this.cmbBrans);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
@@ -165,9 +168,12 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
             this.Name = "FRMDoktorBİlgiDüzenle";
-            this.Text = "FRMDoktorBİlgiDüzenle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bilgi Düzenle";
             this.Load += new System.EventHandler(this.FRMDoktorBİlgiDüzenle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

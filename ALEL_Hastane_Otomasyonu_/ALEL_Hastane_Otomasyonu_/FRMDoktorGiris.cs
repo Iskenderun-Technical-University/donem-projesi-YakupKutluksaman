@@ -38,5 +38,12 @@ namespace ALEL_Hastane_Otomasyonu_
             }
             bgl.baglanti().Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FRMGirisler fr = new FRMGirisler();
+            fr.Show();
+            this.Hide();
+        }
     }
 }

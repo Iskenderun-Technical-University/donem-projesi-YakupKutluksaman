@@ -84,5 +84,14 @@ namespace ALEL_Hastane_Otomasyonu_
             bgl.baglanti().Close();
             MessageBox.Show("Doktor başarıyla eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtisim.Text = "";
+            txtsoyisim.Text = "";
+            MskTC.Text = "";
+            txtSifre.Text = "";
+            cbmBrans.Text = "";
+        }
     }
 }

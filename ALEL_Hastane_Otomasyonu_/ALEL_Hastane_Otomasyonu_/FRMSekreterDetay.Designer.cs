@@ -39,6 +39,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.BtnOlustur = new System.Windows.Forms.Button();
             this.rchDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnTemizle = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.chkDurum = new System.Windows.Forms.CheckBox();
             this.mskTC = new System.Windows.Forms.MaskedTextBox();
@@ -58,10 +59,13 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnDuyurular = new System.Windows.Forms.Button();
             this.BtnRandevuListe = new System.Windows.Forms.Button();
             this.BtnBransPaneli = new System.Windows.Forms.Button();
             this.btnDoktorPaneli = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -70,6 +74,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -78,7 +83,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox1.Controls.Add(this.lblTC);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 269);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(372, 139);
             this.groupBox1.TabIndex = 0;
@@ -125,18 +130,18 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             this.groupBox2.Controls.Add(this.BtnOlustur);
             this.groupBox2.Controls.Add(this.rchDuyuru);
-            this.groupBox2.Location = new System.Drawing.Point(12, 158);
+            this.groupBox2.Location = new System.Drawing.Point(12, 415);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(372, 265);
+            this.groupBox2.Size = new System.Drawing.Size(372, 235);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Duyuru Oluştur";
             // 
             // BtnOlustur
             // 
-            this.BtnOlustur.Location = new System.Drawing.Point(115, 186);
+            this.BtnOlustur.Location = new System.Drawing.Point(24, 187);
             this.BtnOlustur.Name = "BtnOlustur";
-            this.BtnOlustur.Size = new System.Drawing.Size(150, 42);
+            this.BtnOlustur.Size = new System.Drawing.Size(336, 42);
             this.BtnOlustur.TabIndex = 1;
             this.BtnOlustur.Text = "Oluştur";
             this.BtnOlustur.UseVisualStyleBackColor = true;
@@ -146,12 +151,13 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             this.rchDuyuru.Location = new System.Drawing.Point(24, 41);
             this.rchDuyuru.Name = "rchDuyuru";
-            this.rchDuyuru.Size = new System.Drawing.Size(336, 118);
+            this.rchDuyuru.Size = new System.Drawing.Size(336, 140);
             this.rchDuyuru.TabIndex = 0;
             this.rchDuyuru.Text = "";
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnTemizle);
             this.groupBox3.Controls.Add(this.btnKaydet);
             this.groupBox3.Controls.Add(this.chkDurum);
             this.groupBox3.Controls.Add(this.mskTC);
@@ -166,16 +172,26 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(391, 12);
+            this.groupBox3.Location = new System.Drawing.Point(391, 269);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(259, 411);
+            this.groupBox3.Size = new System.Drawing.Size(259, 381);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
             // 
+            // btnTemizle
+            // 
+            this.btnTemizle.Location = new System.Drawing.Point(87, 333);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(158, 42);
+            this.btnTemizle.TabIndex = 14;
+            this.btnTemizle.Text = "Temizle";
+            this.btnTemizle.UseVisualStyleBackColor = true;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
             // btnKaydet
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(87, 296);
+            this.btnKaydet.Location = new System.Drawing.Point(87, 288);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(158, 42);
             this.btnKaydet.TabIndex = 2;
@@ -301,9 +317,9 @@ namespace ALEL_Hastane_Otomasyonu_
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dataGridView1);
-            this.groupBox4.Location = new System.Drawing.Point(656, 12);
+            this.groupBox4.Location = new System.Drawing.Point(656, 269);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(772, 253);
+            this.groupBox4.Size = new System.Drawing.Size(620, 253);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Branşlar";
@@ -315,15 +331,15 @@ namespace ALEL_Hastane_Otomasyonu_
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 25);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(766, 225);
+            this.dataGridView1.Size = new System.Drawing.Size(614, 225);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.dataGridView2);
-            this.groupBox5.Location = new System.Drawing.Point(659, 275);
+            this.groupBox5.Location = new System.Drawing.Point(659, 532);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(765, 266);
+            this.groupBox5.Size = new System.Drawing.Size(617, 266);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Doktorlar";
@@ -335,28 +351,49 @@ namespace ALEL_Hastane_Otomasyonu_
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 25);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(759, 238);
+            this.dataGridView2.Size = new System.Drawing.Size(611, 238);
             this.dataGridView2.TabIndex = 0;
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button2);
+            this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.btnDuyurular);
             this.groupBox6.Controls.Add(this.BtnRandevuListe);
             this.groupBox6.Controls.Add(this.BtnBransPaneli);
             this.groupBox6.Controls.Add(this.btnDoktorPaneli);
-            this.groupBox6.Location = new System.Drawing.Point(13, 430);
+            this.groupBox6.Location = new System.Drawing.Point(13, 656);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(637, 108);
+            this.groupBox6.Size = new System.Drawing.Size(637, 139);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
-            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(326, 85);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(138, 34);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Çıkış";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(166, 85);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 34);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Ana Giriş";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnDuyurular
             // 
-            this.btnDuyurular.Location = new System.Drawing.Point(477, 68);
+            this.btnDuyurular.Location = new System.Drawing.Point(493, 45);
             this.btnDuyurular.Name = "btnDuyurular";
-            this.btnDuyurular.Size = new System.Drawing.Size(154, 34);
+            this.btnDuyurular.Size = new System.Drawing.Size(138, 34);
             this.btnDuyurular.TabIndex = 3;
             this.btnDuyurular.Text = "Duyurular";
             this.btnDuyurular.UseVisualStyleBackColor = true;
@@ -366,7 +403,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             this.BtnRandevuListe.Location = new System.Drawing.Point(326, 45);
             this.BtnRandevuListe.Name = "BtnRandevuListe";
-            this.BtnRandevuListe.Size = new System.Drawing.Size(154, 34);
+            this.BtnRandevuListe.Size = new System.Drawing.Size(138, 34);
             this.BtnRandevuListe.TabIndex = 2;
             this.BtnRandevuListe.Text = "Randevu Liste";
             this.BtnRandevuListe.UseVisualStyleBackColor = true;
@@ -376,7 +413,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             this.BtnBransPaneli.Location = new System.Drawing.Point(166, 45);
             this.BtnBransPaneli.Name = "BtnBransPaneli";
-            this.BtnBransPaneli.Size = new System.Drawing.Size(154, 34);
+            this.BtnBransPaneli.Size = new System.Drawing.Size(138, 34);
             this.BtnBransPaneli.TabIndex = 1;
             this.BtnBransPaneli.Text = "Branş Paneli";
             this.BtnBransPaneli.UseVisualStyleBackColor = true;
@@ -386,18 +423,31 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             this.btnDoktorPaneli.Location = new System.Drawing.Point(6, 45);
             this.btnDoktorPaneli.Name = "btnDoktorPaneli";
-            this.btnDoktorPaneli.Size = new System.Drawing.Size(154, 34);
+            this.btnDoktorPaneli.Size = new System.Drawing.Size(138, 34);
             this.btnDoktorPaneli.TabIndex = 0;
             this.btnDoktorPaneli.Text = "Doktor Paneli";
             this.btnDoktorPaneli.UseVisualStyleBackColor = true;
             this.btnDoktorPaneli.Click += new System.EventHandler(this.btnDoktorPaneli_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ALEL_Hastane_Otomasyonu_.Properties.Resources.ÖZEL_ALEL_HASTANESİ__3_2;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1264, 249);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
             // 
             // FRMSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1438, 558);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1282, 805);
+            this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -409,6 +459,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximizeBox = false;
             this.Name = "FRMSekreterDetay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sekreter Detay";
             this.Load += new System.EventHandler(this.FRMSekreterDetay_Load);
             this.groupBox1.ResumeLayout(false);
@@ -421,6 +472,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -459,5 +511,9 @@ namespace ALEL_Hastane_Otomasyonu_
         private System.Windows.Forms.Button BtnBransPaneli;
         private System.Windows.Forms.Button btnDoktorPaneli;
         private System.Windows.Forms.Button btnDuyurular;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnTemizle;
     }
 }

@@ -102,7 +102,6 @@ namespace ALEL_Hastane_Otomasyonu_
             FRMRandevuListesi fr = new FRMRandevuListesi();
             fr.Show();
         }
-
         private void btnDuyurular_Click(object sender, EventArgs e)
         {
             FRMDuyurular fr = new FRMDuyurular();
@@ -110,9 +109,24 @@ namespace ALEL_Hastane_Otomasyonu_
 
         }
 
-        private void groupBox6_Enter(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            FRMGirisler fr = new FRMGirisler();
+            fr.Show();
+            this.Hide();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            mskTarih.Text = "";
+            mskSaat.Text = "";
+            cmbBrans.Text = "";
+            cmbDoktor.Text = "";
         }
     }
 }

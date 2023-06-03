@@ -45,6 +45,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnSil = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -52,9 +53,9 @@ namespace ALEL_Hastane_Otomasyonu_
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ALEL_Hastane_Otomasyonu_.Properties.Resources.ÖZEL_ALEL_HASTANESİ__3_2;
-            this.pictureBox1.Location = new System.Drawing.Point(212, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 109);
+            this.pictureBox1.Size = new System.Drawing.Size(347, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
@@ -158,7 +159,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(376, 13);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(710, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(710, 438);
             this.dataGridView1.TabIndex = 33;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -182,11 +183,23 @@ namespace ALEL_Hastane_Otomasyonu_
             this.BtnSil.UseVisualStyleBackColor = true;
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(211, 419);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 32);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "Temizle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmDoktorPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 415);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1098, 457);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.dataGridView1);
@@ -205,7 +218,9 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
             this.Name = "FrmDoktorPanel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor Paneli";
             this.Load += new System.EventHandler(this.FrmDoktorPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -232,5 +247,6 @@ namespace ALEL_Hastane_Otomasyonu_
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.Button BtnSil;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -53,7 +53,9 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
             this.Name = "FRMRandevuListesi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Randevu Listesi";
             this.Load += new System.EventHandler(this.FRMRandevuListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

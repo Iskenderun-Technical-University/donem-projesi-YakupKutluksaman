@@ -24,7 +24,6 @@ namespace ALEL_Hastane_Otomasyonu_
             fr.Show();
 
         }
-
         private void BtnGiris_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Select * From Tbl_Hastalar Where HastaTC=@p1 and HastaSifre=@p2", bgl.baglanti());
@@ -42,13 +41,12 @@ namespace ALEL_Hastane_Otomasyonu_
             {
                 MessageBox.Show("Hatalı TC & Şifre");
             }
-
-
         }
-
-        private void FRMHastaGiris_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            FRMGirisler fr = new FRMGirisler();
+            fr.Show();
+            this.Hide();
         }
     }
 }

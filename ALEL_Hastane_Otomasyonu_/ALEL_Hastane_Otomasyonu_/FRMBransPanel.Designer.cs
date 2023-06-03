@@ -45,7 +45,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // BtnSil
             // 
-            this.BtnSil.Location = new System.Drawing.Point(192, 288);
+            this.BtnSil.Location = new System.Drawing.Point(112, 288);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(161, 32);
             this.BtnSil.TabIndex = 50;
@@ -55,7 +55,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // BtnGuncelle
             // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(192, 250);
+            this.BtnGuncelle.Location = new System.Drawing.Point(112, 250);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(161, 32);
             this.BtnGuncelle.TabIndex = 49;
@@ -67,7 +67,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(358, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(278, 24);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(364, 296);
             this.dataGridView1.TabIndex = 48;
@@ -75,14 +75,14 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // txtBransID
             // 
-            this.txtBransID.Location = new System.Drawing.Point(193, 138);
+            this.txtBransID.Location = new System.Drawing.Point(113, 138);
             this.txtBransID.Name = "txtBransID";
             this.txtBransID.Size = new System.Drawing.Size(159, 29);
             this.txtBransID.TabIndex = 42;
             // 
             // BtnEkle
             // 
-            this.BtnEkle.Location = new System.Drawing.Point(192, 212);
+            this.BtnEkle.Location = new System.Drawing.Point(112, 212);
             this.BtnEkle.Name = "BtnEkle";
             this.BtnEkle.Size = new System.Drawing.Size(161, 32);
             this.BtnEkle.TabIndex = 40;
@@ -92,7 +92,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // TxtBransAd
             // 
-            this.TxtBransAd.Location = new System.Drawing.Point(193, 173);
+            this.TxtBransAd.Location = new System.Drawing.Point(113, 173);
             this.TxtBransAd.Name = "TxtBransAd";
             this.TxtBransAd.Size = new System.Drawing.Size(159, 29);
             this.TxtBransAd.TabIndex = 39;
@@ -100,7 +100,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 176);
+            this.label2.Location = new System.Drawing.Point(13, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 23);
             this.label2.TabIndex = 37;
@@ -109,7 +109,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(96, 141);
+            this.label1.Location = new System.Drawing.Point(16, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 23);
             this.label1.TabIndex = 36;
@@ -118,9 +118,9 @@ namespace ALEL_Hastane_Otomasyonu_
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ALEL_Hastane_Otomasyonu_.Properties.Resources.ÖZEL_ALEL_HASTANESİ__3_2;
-            this.pictureBox1.Location = new System.Drawing.Point(194, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 109);
+            this.pictureBox1.Size = new System.Drawing.Size(251, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
@@ -129,7 +129,8 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 382);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(662, 337);
             this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.dataGridView1);
@@ -142,7 +143,9 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
             this.Name = "FRMBransPanel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Branş Paneli";
             this.Load += new System.EventHandler(this.FRMBransPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

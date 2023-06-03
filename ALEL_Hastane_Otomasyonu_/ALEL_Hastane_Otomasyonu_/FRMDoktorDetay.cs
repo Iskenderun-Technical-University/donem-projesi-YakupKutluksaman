@@ -61,5 +61,12 @@ namespace ALEL_Hastane_Otomasyonu_
             int secilen = dataGridView1.SelectedCells[0].RowIndex;
             rchSikayet.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FRMGirisler fr = new FRMGirisler();
+            fr.Show();
+            this.Hide();
+        }
     }
 }

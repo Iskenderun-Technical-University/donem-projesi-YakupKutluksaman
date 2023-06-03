@@ -44,6 +44,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,7 +92,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.label1.Size = new System.Drawing.Size(54, 23);
             this.label1.TabIndex = 5;
             this.label1.Text = "İsim:";
-           // this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -172,6 +172,17 @@ namespace ALEL_Hastane_Otomasyonu_
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.Location = new System.Drawing.Point(216, 369);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 32);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Temizle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FRMHastaKayit
             // 
             this.AcceptButton = this.BtnKayıt;
@@ -179,7 +190,8 @@ namespace ALEL_Hastane_Otomasyonu_
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(425, 389);
+            this.ClientSize = new System.Drawing.Size(406, 405);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -223,5 +235,6 @@ namespace ALEL_Hastane_Otomasyonu_
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

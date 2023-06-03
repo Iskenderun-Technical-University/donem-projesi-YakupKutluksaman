@@ -36,15 +36,15 @@ namespace ALEL_Hastane_Otomasyonu_
             this.TxtSifre = new System.Windows.Forms.TextBox();
             this.BtnGiris = new System.Windows.Forms.Button();
             this.KayitOl = new System.Windows.Forms.LinkLabel();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 111);
+            this.label1.Location = new System.Drawing.Point(20, 140);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 23);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(133, 145);
+            this.label2.Location = new System.Drawing.Point(137, 174);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 23);
             this.label2.TabIndex = 1;
@@ -61,7 +61,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // MskTC
             // 
-            this.MskTC.Location = new System.Drawing.Point(189, 108);
+            this.MskTC.Location = new System.Drawing.Point(193, 137);
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(160, 31);
@@ -70,7 +70,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // TxtSifre
             // 
-            this.TxtSifre.Location = new System.Drawing.Point(190, 142);
+            this.TxtSifre.Location = new System.Drawing.Point(194, 171);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(159, 31);
             this.TxtSifre.TabIndex = 3;
@@ -78,9 +78,9 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // BtnGiris
             // 
-            this.BtnGiris.Location = new System.Drawing.Point(189, 179);
+            this.BtnGiris.Location = new System.Drawing.Point(193, 208);
             this.BtnGiris.Name = "BtnGiris";
-            this.BtnGiris.Size = new System.Drawing.Size(159, 32);
+            this.BtnGiris.Size = new System.Drawing.Size(160, 32);
             this.BtnGiris.TabIndex = 4;
             this.BtnGiris.Text = "Giriş Yap";
             this.BtnGiris.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // KayitOl
             // 
             this.KayitOl.AutoSize = true;
-            this.KayitOl.Location = new System.Drawing.Point(355, 150);
+            this.KayitOl.Location = new System.Drawing.Point(116, 251);
             this.KayitOl.Name = "KayitOl";
             this.KayitOl.Size = new System.Drawing.Size(71, 23);
             this.KayitOl.TabIndex = 5;
@@ -97,25 +97,25 @@ namespace ALEL_Hastane_Otomasyonu_
             this.KayitOl.Text = "Kayıt Ol";
             this.KayitOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.KayitOl_LinkClicked);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Corbel", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(13, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(256, 39);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Hasta Giriş Paneli";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ALEL_Hastane_Otomasyonu_.Properties.Resources.ÖZEL_ALEL_HASTANESİ__3_1;
-            this.pictureBox1.Location = new System.Drawing.Point(275, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 81);
+            this.pictureBox1.Size = new System.Drawing.Size(339, 119);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(193, 246);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 32);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Ana Giriş";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FRMHastaGiris
             // 
@@ -124,9 +124,10 @@ namespace ALEL_Hastane_Otomasyonu_
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(484, 249);
+            this.ClientSize = new System.Drawing.Size(389, 288);
+            this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.KayitOl);
             this.Controls.Add(this.BtnGiris);
             this.Controls.Add(this.TxtSifre);
@@ -138,8 +139,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FRMHastaGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRMHastaGiris";
-            this.Load += new System.EventHandler(this.FRMHastaGiris_Load);
+            this.Text = "Hasta Giriş Paneli";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -154,7 +154,7 @@ namespace ALEL_Hastane_Otomasyonu_
         private System.Windows.Forms.TextBox TxtSifre;
         private System.Windows.Forms.Button BtnGiris;
         private System.Windows.Forms.LinkLabel KayitOl;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

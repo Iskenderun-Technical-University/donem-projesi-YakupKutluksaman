@@ -32,5 +32,15 @@ namespace ALEL_Hastane_Otomasyonu_
             bgl.baglanti().Close();
             MessageBox.Show("Kaydınız Oluşturuldu.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtisim.Text = "";
+            txtsoyisim.Text = "";
+            MskTC.Text = "";
+            mskTlf.Text = "";
+            txtSifre.Text = "";
+            cbmCinsiyet.Text = "";
+        }
     }
 }

@@ -176,6 +176,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(428, 398);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
@@ -194,7 +195,9 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
             this.Name = "FRMHastaBilgiDüzenle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bilgi Güncelleme";
             this.Load += new System.EventHandler(this.FRMHastaBilgiDüzenle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
