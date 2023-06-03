@@ -58,10 +58,10 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnDuyurular = new System.Windows.Forms.Button();
             this.BtnRandevuListe = new System.Windows.Forms.Button();
             this.BtnBransPaneli = new System.Windows.Forms.Button();
             this.btnDoktorPaneli = new System.Windows.Forms.Button();
-            this.btnDuyurular = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -350,6 +350,17 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
+            // 
+            // btnDuyurular
+            // 
+            this.btnDuyurular.Location = new System.Drawing.Point(477, 68);
+            this.btnDuyurular.Name = "btnDuyurular";
+            this.btnDuyurular.Size = new System.Drawing.Size(154, 34);
+            this.btnDuyurular.TabIndex = 3;
+            this.btnDuyurular.Text = "Duyurular";
+            this.btnDuyurular.UseVisualStyleBackColor = true;
+            this.btnDuyurular.Click += new System.EventHandler(this.btnDuyurular_Click);
             // 
             // BtnRandevuListe
             // 
@@ -380,16 +391,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.btnDoktorPaneli.Text = "Doktor Paneli";
             this.btnDoktorPaneli.UseVisualStyleBackColor = true;
             this.btnDoktorPaneli.Click += new System.EventHandler(this.btnDoktorPaneli_Click);
-            // 
-            // btnDuyurular
-            // 
-            this.btnDuyurular.Location = new System.Drawing.Point(477, 68);
-            this.btnDuyurular.Name = "btnDuyurular";
-            this.btnDuyurular.Size = new System.Drawing.Size(154, 34);
-            this.btnDuyurular.TabIndex = 3;
-            this.btnDuyurular.Text = "Duyurular";
-            this.btnDuyurular.UseVisualStyleBackColor = true;
-            this.btnDuyurular.Click += new System.EventHandler(this.btnDuyurular_Click);
             // 
             // FRMSekreterDetay
             // 

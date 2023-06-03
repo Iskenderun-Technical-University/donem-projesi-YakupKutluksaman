@@ -109,5 +109,10 @@ namespace ALEL_Hastane_Otomasyonu_
             fr.Show();
 
         }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

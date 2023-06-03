@@ -30,19 +30,19 @@ namespace ALEL_Hastane_Otomasyonu_
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblAdSoyad = new System.Windows.Forms.Label();
+            this.LblTC = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rchSikayet = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnBilgiDuzenle = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -52,8 +52,8 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.lblAdSoyad);
+            this.groupBox1.Controls.Add(this.LblTC);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -63,23 +63,23 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Doktor Bilgi";
             // 
-            // label4
+            // lblAdSoyad
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(187, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(167, 23);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "TC Kimlik Numarası:";
+            this.lblAdSoyad.AutoSize = true;
+            this.lblAdSoyad.Location = new System.Drawing.Point(187, 71);
+            this.lblAdSoyad.Name = "lblAdSoyad";
+            this.lblAdSoyad.Size = new System.Drawing.Size(167, 23);
+            this.lblAdSoyad.TabIndex = 3;
+            this.lblAdSoyad.Text = "TC Kimlik Numarası:";
             // 
-            // label3
+            // LblTC
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(187, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 23);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "TC Kimlik Numarası:";
+            this.LblTC.AutoSize = true;
+            this.LblTC.Location = new System.Drawing.Point(187, 31);
+            this.LblTC.Name = "LblTC";
+            this.LblTC.Size = new System.Drawing.Size(167, 23);
+            this.LblTC.TabIndex = 2;
+            this.LblTC.Text = "TC Kimlik Numarası:";
             // 
             // label2
             // 
@@ -101,13 +101,21 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.rchSikayet);
             this.groupBox2.Location = new System.Drawing.Point(12, 131);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(364, 209);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Detay";
+            // 
+            // rchSikayet
+            // 
+            this.rchSikayet.Location = new System.Drawing.Point(6, 30);
+            this.rchSikayet.Name = "rchSikayet";
+            this.rchSikayet.Size = new System.Drawing.Size(352, 173);
+            this.rchSikayet.TabIndex = 0;
+            this.rchSikayet.Text = "";
             // 
             // groupBox3
             // 
@@ -127,13 +135,14 @@ namespace ALEL_Hastane_Otomasyonu_
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(608, 407);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.button4);
             this.groupBox4.Controls.Add(this.button3);
             this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.button2);
+            this.groupBox4.Controls.Add(this.btnBilgiDuzenle);
             this.groupBox4.Location = new System.Drawing.Point(12, 346);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(364, 103);
@@ -149,6 +158,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.button4.TabIndex = 4;
             this.button4.Text = "Çıkış";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -167,28 +177,23 @@ namespace ALEL_Hastane_Otomasyonu_
             this.button1.TabIndex = 2;
             this.button1.Text = "Duyurular";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnBilgiDuzenle
             // 
-            this.button2.Location = new System.Drawing.Point(40, 27);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Bilgi Düzenle";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 30);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(352, 173);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.btnBilgiDuzenle.Location = new System.Drawing.Point(40, 27);
+            this.btnBilgiDuzenle.Name = "btnBilgiDuzenle";
+            this.btnBilgiDuzenle.Size = new System.Drawing.Size(135, 32);
+            this.btnBilgiDuzenle.TabIndex = 1;
+            this.btnBilgiDuzenle.Text = "Bilgi Düzenle";
+            this.btnBilgiDuzenle.UseVisualStyleBackColor = true;
+            this.btnBilgiDuzenle.Click += new System.EventHandler(this.btnBilgiDuzenle_Click);
             // 
             // FRMDoktorDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1003, 453);
             this.Controls.Add(this.groupBox4);
@@ -198,7 +203,9 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FRMDoktorDetay";
-            this.Text = "FRMDoktorDetay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Doktor Detay Ekranı";
+            this.Load += new System.EventHandler(this.FRMDoktorDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -212,8 +219,8 @@ namespace ALEL_Hastane_Otomasyonu_
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblAdSoyad;
+        private System.Windows.Forms.Label LblTC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -223,7 +230,7 @@ namespace ALEL_Hastane_Otomasyonu_
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button btnBilgiDuzenle;
+        private System.Windows.Forms.RichTextBox rchSikayet;
     }
 }

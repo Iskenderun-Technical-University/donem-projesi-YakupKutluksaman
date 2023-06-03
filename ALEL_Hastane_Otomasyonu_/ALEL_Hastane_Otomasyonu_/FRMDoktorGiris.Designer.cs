@@ -50,7 +50,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.label3.Size = new System.Drawing.Size(269, 39);
             this.label3.TabIndex = 14;
             this.label3.Text = "Doktor Giriş Paneli";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // KayitOl
             // 
@@ -70,6 +69,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.BtnGiris.TabIndex = 12;
             this.BtnGiris.Text = "Giriş Yap";
             this.BtnGiris.UseVisualStyleBackColor = true;
+            this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
             // 
             // TxtSifre
             // 
@@ -77,6 +77,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(159, 31);
             this.TxtSifre.TabIndex = 11;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTC
             // 
@@ -120,6 +121,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.AcceptButton = this.BtnGiris;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(491, 257);
             this.Controls.Add(this.pictureBox1);
@@ -133,8 +135,10 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FRMDoktorGiris";
-            this.Text = "FRMDoktorGiris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Doktor Giriş";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

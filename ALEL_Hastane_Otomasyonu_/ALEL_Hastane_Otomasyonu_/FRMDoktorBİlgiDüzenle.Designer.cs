@@ -29,7 +29,6 @@ namespace ALEL_Hastane_Otomasyonu_
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ComboBox cmbBrans;
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtSifre = new System.Windows.Forms.TextBox();
@@ -41,7 +40,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            cmbBrans = new System.Windows.Forms.ComboBox();
+            this.cmbBrans = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,6 +103,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.BtnGuncelle.TabIndex = 37;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // txtsoyisim
             // 
@@ -141,21 +141,18 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // cmbBrans
             // 
-            cmbBrans.FormattingEnabled = true;
-            cmbBrans.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-            cmbBrans.Location = new System.Drawing.Point(204, 230);
-            cmbBrans.Name = "cmbBrans";
-            cmbBrans.Size = new System.Drawing.Size(160, 31);
-            cmbBrans.TabIndex = 47;
+            this.cmbBrans.FormattingEnabled = true;
+            this.cmbBrans.Location = new System.Drawing.Point(204, 230);
+            this.cmbBrans.Name = "cmbBrans";
+            this.cmbBrans.Size = new System.Drawing.Size(159, 31);
+            this.cmbBrans.TabIndex = 47;
             // 
             // FRMDoktorBİlgiDüzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 359);
-            this.Controls.Add(cmbBrans);
+            this.Controls.Add(this.cmbBrans);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtSifre);
@@ -171,6 +168,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FRMDoktorBİlgiDüzenle";
             this.Text = "FRMDoktorBİlgiDüzenle";
+            this.Load += new System.EventHandler(this.FRMDoktorBİlgiDüzenle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,5 +188,6 @@ namespace ALEL_Hastane_Otomasyonu_
         private System.Windows.Forms.MaskedTextBox MskTC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbBrans;
     }
 }

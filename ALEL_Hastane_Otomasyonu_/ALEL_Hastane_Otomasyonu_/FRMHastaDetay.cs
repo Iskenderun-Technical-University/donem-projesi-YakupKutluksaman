@@ -45,7 +45,6 @@ namespace ALEL_Hastane_Otomasyonu_
                 cmbBrans.Items.Add(dr2[0]); // comboboxa Branşları çekiyoruz.
             }
         }
-
         private void cmbBrans_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbDoktor.Items.Clear(); // Her Branş seçiminde doktorların combobox temizliyoruz.
@@ -62,7 +61,7 @@ namespace ALEL_Hastane_Otomasyonu_
         private void cmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular where RandevuBrans ='"+cmbBrans.Text+"'",bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular where RandevuBrans ='" + cmbBrans.Text+"'" + "and RandevuDoktor='"+cmbDoktor.Text+"'and RandevuDurum=0",bgl.baglanti());
             da.Fill(dt);
             dataGridView2.DataSource = dt;
         }
@@ -71,6 +70,21 @@ namespace ALEL_Hastane_Otomasyonu_
             FRMHastaBilgiDüzenle fr = new FRMHastaBilgiDüzenle();
             fr.TCno = lblTC.Text; //Hasta detay formundaki tc numarasını hasta bilgi düzenle formunda tc numarasına taşıdık.
             fr.Show();
+        }
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView2.SelectedCells[0].RowIndex;
+            txtID.Text = dataGridView2.Rows[secilen].Cells[0].Value.ToString();
+        }
+        private void btnRandevuAl_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("update Tbl_Randevular set RandevuDurum=1,HastaTC=@q1,HastaSikayet=@q2 where RandevuID=@q3", bgl.baglanti());
+            komut.Parameters.AddWithValue("@q1", lblTC.Text);
+            komut.Parameters.AddWithValue("@q2", rchSikayet.Text);
+            komut.Parameters.AddWithValue("@q3", txtID.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevu Başarıyla Oluşturuldu", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
         }
     }
 }

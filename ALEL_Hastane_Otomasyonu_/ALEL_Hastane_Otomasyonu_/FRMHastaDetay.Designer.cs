@@ -36,7 +36,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.lblTC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
             this.btnRandevuAl = new System.Windows.Forms.Button();
@@ -109,7 +109,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtID);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.lnkBilgiDuzenle);
             this.groupBox2.Controls.Add(this.btnRandevuAl);
@@ -126,12 +126,13 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 29);
-            this.textBox1.TabIndex = 9;
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(109, 58);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(182, 29);
+            this.txtID.TabIndex = 9;
             // 
             // label2
             // 
@@ -161,6 +162,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.btnRandevuAl.TabIndex = 6;
             this.btnRandevuAl.Text = "Randevu Al";
             this.btnRandevuAl.UseVisualStyleBackColor = true;
+            this.btnRandevuAl.Click += new System.EventHandler(this.btnRandevuAl_Click);
             // 
             // rchSikayet
             // 
@@ -252,11 +254,13 @@ namespace ALEL_Hastane_Otomasyonu_
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(621, 210);
             this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // FRMHastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(991, 600);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -265,7 +269,9 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
             this.Name = "FRMHastaDetay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta Detay";
             this.Load += new System.EventHandler(this.FRMHastaDetay_Load);
             this.groupBox1.ResumeLayout(false);
@@ -300,7 +306,7 @@ namespace ALEL_Hastane_Otomasyonu_
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label2;
     }
 }
