@@ -36,6 +36,8 @@ namespace ALEL_Hastane_Otomasyonu_
             this.lblTC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
             this.btnRandevuAl = new System.Windows.Forms.Button();
             this.rchSikayet = new System.Windows.Forms.RichTextBox();
@@ -48,8 +50,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -125,6 +125,22 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(109, 58);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(182, 29);
+            this.textBox1.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(27, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 23);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "ID:";
             // 
             // lnkBilgiDuzenle
             // 
@@ -207,7 +223,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox3.Size = new System.Drawing.Size(627, 238);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Aktif Randevular";
+            this.groupBox3.Text = "Geçmiş Randevular";
             // 
             // dataGridView1
             // 
@@ -226,7 +242,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox4.Size = new System.Drawing.Size(627, 238);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Geçmiş Randevular";
+            this.groupBox4.Text = "Aktif Randevular";
             // 
             // dataGridView2
             // 
@@ -236,22 +252,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(621, 210);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 23);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "ID:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(109, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 29);
-            this.textBox1.TabIndex = 9;
             // 
             // FRMHastaDetay
             // 

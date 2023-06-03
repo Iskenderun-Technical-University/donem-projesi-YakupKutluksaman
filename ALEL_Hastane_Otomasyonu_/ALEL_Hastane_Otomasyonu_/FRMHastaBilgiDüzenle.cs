@@ -37,7 +37,6 @@ namespace ALEL_Hastane_Otomasyonu_
             bgl.baglanti().Close();
             
         }
-
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
             SqlCommand komut2 =new SqlCommand("update Tbl_Hastalar set HastaAd=@p1,HastaSoyad=@p2,HastaTLF=@p3,HastaSifre=@p4,HastaCinsiyet=@p5 where HastaTC=@p6",bgl.baglanti());

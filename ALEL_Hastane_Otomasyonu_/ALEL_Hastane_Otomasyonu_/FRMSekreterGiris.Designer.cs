@@ -50,7 +50,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.label3.Size = new System.Drawing.Size(289, 39);
             this.label3.TabIndex = 22;
             this.label3.Text = "Sekreter Giriş Paneli";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // KayitOl
             // 
@@ -61,7 +60,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.KayitOl.TabIndex = 21;
             this.KayitOl.TabStop = true;
             this.KayitOl.Text = "Kayıt Ol";
-            this.KayitOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.KayitOl_LinkClicked);
             // 
             // BtnGiris
             // 
@@ -79,7 +77,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(159, 29);
             this.TxtSifre.TabIndex = 19;
-            this.TxtSifre.TextChanged += new System.EventHandler(this.TxtSifre_TextChanged);
             // 
             // MskTC
             // 
@@ -89,7 +86,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.MskTC.Size = new System.Drawing.Size(160, 29);
             this.MskTC.TabIndex = 18;
             this.MskTC.ValidatingType = typeof(int);
-            this.MskTC.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MskTC_MaskInputRejected);
             // 
             // label2
             // 
@@ -99,7 +95,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.label2.Size = new System.Drawing.Size(56, 23);
             this.label2.TabIndex = 17;
             this.label2.Text = "Şifre:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -109,7 +104,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.label1.Size = new System.Drawing.Size(192, 23);
             this.label1.TabIndex = 16;
             this.label1.Text = "TC Kimlik Numarası:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -120,12 +114,13 @@ namespace ALEL_Hastane_Otomasyonu_
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FRMSekreterGiris
             // 
+            this.AcceptButton = this.BtnGiris;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(508, 245);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);

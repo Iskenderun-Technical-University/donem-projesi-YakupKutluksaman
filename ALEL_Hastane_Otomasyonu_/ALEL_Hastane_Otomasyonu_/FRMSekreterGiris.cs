@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ALEL_Hastane_Otomasyonu_
 {
@@ -16,45 +17,25 @@ namespace ALEL_Hastane_Otomasyonu_
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void KayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
+        sqlbaglantisi bgl = new sqlbaglantisi();
         private void BtnGiris_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void TxtSifre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MskTC_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            SqlCommand komut = new SqlCommand("Select * From Tbl_Sekreterler Where SekreterTC=@q1 and SekreterSifre=@q2", bgl.baglanti());
+            komut.Parameters.AddWithValue("@q1", MskTC.Text);
+            komut.Parameters.AddWithValue("@q2", TxtSifre.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            if(dr.Read())
+            {
+                FRMSekreterDetay fr = new FRMSekreterDetay();
+                fr.TCNumara = MskTC.Text;
+                fr.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Hatalı TC & Şifre");
+            }
+            bgl.baglanti().Close();
         }
     }
 }

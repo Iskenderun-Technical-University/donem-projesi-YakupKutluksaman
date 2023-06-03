@@ -30,37 +30,37 @@ namespace ALEL_Hastane_Otomasyonu_
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblTC = new System.Windows.Forms.Label();
             this.LblisimSoyisim = new System.Windows.Forms.Label();
+            this.lblTC = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rchDuyuru = new System.Windows.Forms.RichTextBox();
             this.BtnOlustur = new System.Windows.Forms.Button();
+            this.rchDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.mskTarih = new System.Windows.Forms.MaskedTextBox();
-            this.mskSaat = new System.Windows.Forms.MaskedTextBox();
-            this.cmbBrans = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cmbDoktor = new System.Windows.Forms.ComboBox();
-            this.mskTC = new System.Windows.Forms.MaskedTextBox();
-            this.chkDurum = new System.Windows.Forms.CheckBox();
-            this.btnKaydet = new System.Windows.Forms.Button();
             this.BtnGuncelle = new System.Windows.Forms.Button();
+            this.btnKaydet = new System.Windows.Forms.Button();
+            this.chkDurum = new System.Windows.Forms.CheckBox();
+            this.mskTC = new System.Windows.Forms.MaskedTextBox();
+            this.cmbDoktor = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbBrans = new System.Windows.Forms.ComboBox();
+            this.mskSaat = new System.Windows.Forms.MaskedTextBox();
+            this.mskTarih = new System.Windows.Forms.MaskedTextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.btnDoktorPaneli = new System.Windows.Forms.Button();
-            this.BtnBransPaneli = new System.Windows.Forms.Button();
             this.BtnRandevuListe = new System.Windows.Forms.Button();
+            this.BtnBransPaneli = new System.Windows.Forms.Button();
+            this.btnDoktorPaneli = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -84,23 +84,14 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sekreter Bilgi";
             // 
-            // label1
+            // LblisimSoyisim
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TC Kimlik Numarası:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(86, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "İsim Soyisim:";
+            this.LblisimSoyisim.AutoSize = true;
+            this.LblisimSoyisim.Location = new System.Drawing.Point(218, 75);
+            this.LblisimSoyisim.Name = "LblisimSoyisim";
+            this.LblisimSoyisim.Size = new System.Drawing.Size(87, 23);
+            this.LblisimSoyisim.TabIndex = 3;
+            this.LblisimSoyisim.Text = "Null Null";
             // 
             // lblTC
             // 
@@ -111,14 +102,23 @@ namespace ALEL_Hastane_Otomasyonu_
             this.lblTC.TabIndex = 2;
             this.lblTC.Text = "00000000000";
             // 
-            // LblisimSoyisim
+            // label2
             // 
-            this.LblisimSoyisim.AutoSize = true;
-            this.LblisimSoyisim.Location = new System.Drawing.Point(218, 75);
-            this.LblisimSoyisim.Name = "LblisimSoyisim";
-            this.LblisimSoyisim.Size = new System.Drawing.Size(87, 23);
-            this.LblisimSoyisim.TabIndex = 3;
-            this.LblisimSoyisim.Text = "Null Null";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(86, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "İsim Soyisim:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(192, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TC Kimlik Numarası:";
             // 
             // groupBox2
             // 
@@ -131,14 +131,6 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Duyuru Oluştur";
             // 
-            // rchDuyuru
-            // 
-            this.rchDuyuru.Location = new System.Drawing.Point(24, 41);
-            this.rchDuyuru.Name = "rchDuyuru";
-            this.rchDuyuru.Size = new System.Drawing.Size(336, 118);
-            this.rchDuyuru.TabIndex = 0;
-            this.rchDuyuru.Text = "";
-            // 
             // BtnOlustur
             // 
             this.BtnOlustur.Location = new System.Drawing.Point(115, 186);
@@ -147,6 +139,15 @@ namespace ALEL_Hastane_Otomasyonu_
             this.BtnOlustur.TabIndex = 1;
             this.BtnOlustur.Text = "Oluştur";
             this.BtnOlustur.UseVisualStyleBackColor = true;
+            this.BtnOlustur.Click += new System.EventHandler(this.BtnOlustur_Click);
+            // 
+            // rchDuyuru
+            // 
+            this.rchDuyuru.Location = new System.Drawing.Point(24, 41);
+            this.rchDuyuru.Name = "rchDuyuru";
+            this.rchDuyuru.Size = new System.Drawing.Size(336, 118);
+            this.rchDuyuru.TabIndex = 0;
+            this.rchDuyuru.Text = "";
             // 
             // groupBox3
             // 
@@ -172,110 +173,24 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
             // 
-            // label5
+            // BtnGuncelle
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 23);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "ID:";
+            this.BtnGuncelle.Location = new System.Drawing.Point(87, 344);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(158, 42);
+            this.BtnGuncelle.TabIndex = 14;
+            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // btnKaydet
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 85);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 23);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Tarih:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(29, 123);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 23);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Saat:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(18, 160);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 23);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Branş:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(43, 230);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 23);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "TC:";
-            // 
-            // txtid
-            // 
-            this.txtid.Location = new System.Drawing.Point(87, 48);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(158, 29);
-            this.txtid.TabIndex = 6;
-            // 
-            // mskTarih
-            // 
-            this.mskTarih.Location = new System.Drawing.Point(87, 83);
-            this.mskTarih.Mask = "00/00/0000";
-            this.mskTarih.Name = "mskTarih";
-            this.mskTarih.Size = new System.Drawing.Size(158, 29);
-            this.mskTarih.TabIndex = 7;
-            this.mskTarih.ValidatingType = typeof(System.DateTime);
-            this.mskTarih.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
-            // 
-            // mskSaat
-            // 
-            this.mskSaat.Location = new System.Drawing.Point(87, 118);
-            this.mskSaat.Mask = "00:00";
-            this.mskSaat.Name = "mskSaat";
-            this.mskSaat.Size = new System.Drawing.Size(158, 29);
-            this.mskSaat.TabIndex = 8;
-            this.mskSaat.ValidatingType = typeof(System.DateTime);
-            // 
-            // cmbBrans
-            // 
-            this.cmbBrans.FormattingEnabled = true;
-            this.cmbBrans.Location = new System.Drawing.Point(87, 153);
-            this.cmbBrans.Name = "cmbBrans";
-            this.cmbBrans.Size = new System.Drawing.Size(158, 31);
-            this.cmbBrans.TabIndex = 9;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(8, 193);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 23);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Doktor:";
-            // 
-            // cmbDoktor
-            // 
-            this.cmbDoktor.FormattingEnabled = true;
-            this.cmbDoktor.Location = new System.Drawing.Point(87, 190);
-            this.cmbDoktor.Name = "cmbDoktor";
-            this.cmbDoktor.Size = new System.Drawing.Size(158, 31);
-            this.cmbDoktor.TabIndex = 11;
-            // 
-            // mskTC
-            // 
-            this.mskTC.Location = new System.Drawing.Point(87, 227);
-            this.mskTC.Mask = "00000000000";
-            this.mskTC.Name = "mskTC";
-            this.mskTC.Size = new System.Drawing.Size(158, 29);
-            this.mskTC.TabIndex = 12;
-            this.mskTC.ValidatingType = typeof(int);
+            this.btnKaydet.Location = new System.Drawing.Point(87, 296);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(158, 42);
+            this.btnKaydet.TabIndex = 2;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // chkDurum
             // 
@@ -287,23 +202,110 @@ namespace ALEL_Hastane_Otomasyonu_
             this.chkDurum.Text = "Durum";
             this.chkDurum.UseVisualStyleBackColor = true;
             // 
-            // btnKaydet
+            // mskTC
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(87, 296);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(158, 42);
-            this.btnKaydet.TabIndex = 2;
-            this.btnKaydet.Text = "Kaydet";
-            this.btnKaydet.UseVisualStyleBackColor = true;
+            this.mskTC.Location = new System.Drawing.Point(87, 227);
+            this.mskTC.Mask = "00000000000";
+            this.mskTC.Name = "mskTC";
+            this.mskTC.Size = new System.Drawing.Size(158, 29);
+            this.mskTC.TabIndex = 12;
+            this.mskTC.ValidatingType = typeof(int);
             // 
-            // BtnGuncelle
+            // cmbDoktor
             // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(87, 344);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(158, 42);
-            this.BtnGuncelle.TabIndex = 14;
-            this.BtnGuncelle.Text = "Güncelle";
-            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.cmbDoktor.FormattingEnabled = true;
+            this.cmbDoktor.Location = new System.Drawing.Point(87, 190);
+            this.cmbDoktor.Name = "cmbDoktor";
+            this.cmbDoktor.Size = new System.Drawing.Size(158, 31);
+            this.cmbDoktor.TabIndex = 11;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(8, 193);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(75, 23);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "Doktor:";
+            // 
+            // cmbBrans
+            // 
+            this.cmbBrans.FormattingEnabled = true;
+            this.cmbBrans.Location = new System.Drawing.Point(87, 153);
+            this.cmbBrans.Name = "cmbBrans";
+            this.cmbBrans.Size = new System.Drawing.Size(158, 31);
+            this.cmbBrans.TabIndex = 9;
+            this.cmbBrans.SelectedIndexChanged += new System.EventHandler(this.cmbBrans_SelectedIndexChanged);
+            // 
+            // mskSaat
+            // 
+            this.mskSaat.Location = new System.Drawing.Point(87, 118);
+            this.mskSaat.Mask = "00:00";
+            this.mskSaat.Name = "mskSaat";
+            this.mskSaat.Size = new System.Drawing.Size(158, 29);
+            this.mskSaat.TabIndex = 8;
+            this.mskSaat.ValidatingType = typeof(System.DateTime);
+            // 
+            // mskTarih
+            // 
+            this.mskTarih.Location = new System.Drawing.Point(87, 83);
+            this.mskTarih.Mask = "00/00/0000";
+            this.mskTarih.Name = "mskTarih";
+            this.mskTarih.Size = new System.Drawing.Size(158, 29);
+            this.mskTarih.TabIndex = 7;
+            this.mskTarih.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(87, 48);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(158, 29);
+            this.txtid.TabIndex = 6;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(43, 230);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(40, 23);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "TC:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(18, 160);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 23);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Branş:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(29, 123);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 23);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Saat:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(23, 85);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 23);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Tarih:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(46, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 23);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "ID:";
             // 
             // groupBox4
             // 
@@ -317,6 +319,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 25);
@@ -336,6 +339,7 @@ namespace ALEL_Hastane_Otomasyonu_
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 25);
@@ -355,14 +359,14 @@ namespace ALEL_Hastane_Otomasyonu_
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
             // 
-            // btnDoktorPaneli
+            // BtnRandevuListe
             // 
-            this.btnDoktorPaneli.Location = new System.Drawing.Point(54, 46);
-            this.btnDoktorPaneli.Name = "btnDoktorPaneli";
-            this.btnDoktorPaneli.Size = new System.Drawing.Size(154, 34);
-            this.btnDoktorPaneli.TabIndex = 0;
-            this.btnDoktorPaneli.Text = "Doktor Paneli";
-            this.btnDoktorPaneli.UseVisualStyleBackColor = true;
+            this.BtnRandevuListe.Location = new System.Drawing.Point(374, 46);
+            this.BtnRandevuListe.Name = "BtnRandevuListe";
+            this.BtnRandevuListe.Size = new System.Drawing.Size(154, 34);
+            this.BtnRandevuListe.TabIndex = 2;
+            this.BtnRandevuListe.Text = "Randevu Liste";
+            this.BtnRandevuListe.UseVisualStyleBackColor = true;
             // 
             // BtnBransPaneli
             // 
@@ -373,14 +377,15 @@ namespace ALEL_Hastane_Otomasyonu_
             this.BtnBransPaneli.Text = "Branş Paneli";
             this.BtnBransPaneli.UseVisualStyleBackColor = true;
             // 
-            // BtnRandevuListe
+            // btnDoktorPaneli
             // 
-            this.BtnRandevuListe.Location = new System.Drawing.Point(374, 46);
-            this.BtnRandevuListe.Name = "BtnRandevuListe";
-            this.BtnRandevuListe.Size = new System.Drawing.Size(154, 34);
-            this.BtnRandevuListe.TabIndex = 2;
-            this.BtnRandevuListe.Text = "Randevu Liste";
-            this.BtnRandevuListe.UseVisualStyleBackColor = true;
+            this.btnDoktorPaneli.Location = new System.Drawing.Point(54, 46);
+            this.btnDoktorPaneli.Name = "btnDoktorPaneli";
+            this.btnDoktorPaneli.Size = new System.Drawing.Size(154, 34);
+            this.btnDoktorPaneli.TabIndex = 0;
+            this.btnDoktorPaneli.Text = "Doktor Paneli";
+            this.btnDoktorPaneli.UseVisualStyleBackColor = true;
+            this.btnDoktorPaneli.Click += new System.EventHandler(this.btnDoktorPaneli_Click);
             // 
             // FRMSekreterDetay
             // 
@@ -397,6 +402,7 @@ namespace ALEL_Hastane_Otomasyonu_
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FRMSekreterDetay";
             this.Text = "FRMSekreterDetay";
+            this.Load += new System.EventHandler(this.FRMSekreterDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
