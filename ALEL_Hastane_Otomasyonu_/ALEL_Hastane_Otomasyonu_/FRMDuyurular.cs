@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace ALEL_Hastane_Otomasyonu_
 {
@@ -15,6 +17,14 @@ namespace ALEL_Hastane_Otomasyonu_
         public FRMDuyurular()
         {
             InitializeComponent();
+        }
+        sqlbaglantisi bgl = new sqlbaglantisi();
+        private void FRMDuyurular_Load(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Duyurular", bgl.baglanti());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
     }
 }

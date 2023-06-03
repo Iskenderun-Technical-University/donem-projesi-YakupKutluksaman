@@ -19,11 +19,13 @@ namespace ALEL_Hastane_Otomasyonu_
             InitializeComponent();
         }
         public string TCNumara;
+        
         sqlbaglantisi bgl = new sqlbaglantisi();
 
         private void FRMSekreterDetay_Load(object sender, EventArgs e)
         {
             lblTC.Text = TCNumara;
+            
 
             SqlCommand komut1 = new SqlCommand("Select SekreterAd,SekreterSoyad From Tbl_Sekreterler Where SekreterTC=@q1",bgl.baglanti());
             komut1.Parameters.AddWithValue("@q1", lblTC.Text);
@@ -51,9 +53,6 @@ namespace ALEL_Hastane_Otomasyonu_
                 cmbBrans.Items.Add(dr2[0]);
             }
             bgl.baglanti().Close();
-
-
-
         }
         private void btnKaydet_Click(object sender, EventArgs e)
         {
@@ -66,9 +65,7 @@ namespace ALEL_Hastane_Otomasyonu_
             komut3.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Randevu oluşturuldu");
-
         }
-
         private void cmbBrans_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbDoktor.Items.Clear();
@@ -81,7 +78,6 @@ namespace ALEL_Hastane_Otomasyonu_
             }
             bgl.baglanti().Close();
         }
-
         private void BtnOlustur_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("insert into Tbl_Duyurular (duyuru) values (@q1)", bgl.baglanti());
@@ -91,11 +87,27 @@ namespace ALEL_Hastane_Otomasyonu_
             MessageBox.Show("Duyuru Oluşturuldu!");
             bgl.baglanti().Close();
         }
-
         private void btnDoktorPaneli_Click(object sender, EventArgs e)
         {
             FrmDoktorPanel fr = new FrmDoktorPanel();
             fr.Show();
+        }
+        private void BtnBransPaneli_Click(object sender, EventArgs e)
+        {
+            FRMBransPanel fr = new FRMBransPanel();
+            fr.Show();
+        }
+        private void BtnRandevuListe_Click(object sender, EventArgs e)
+        {
+            FRMRandevuListesi fr = new FRMRandevuListesi();
+            fr.Show();
+        }
+
+        private void btnDuyurular_Click(object sender, EventArgs e)
+        {
+            FRMDuyurular fr = new FRMDuyurular();
+            fr.Show();
+
         }
     }
 }
