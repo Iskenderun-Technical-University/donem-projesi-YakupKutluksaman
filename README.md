@@ -41,6 +41,8 @@ Proje'nin çalıştırılabilmesi için aşağıdaki adımları izleyebilirsiniz
 
 Uygulamayı çalıştırdığınızda karşınıza giriş ekranı gelecektir. Buradan doktor, hasta veya sekreter olarak giriş yapabilirsiniz. Giriş yaptığınızda ilgili menüleri göreceksiniz. Menülerden istediğiniz işlemi seçebilir ve uygulayabilirsiniz.
 
-## Lisans
+## SQL Veri Tabanı
 
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakınız.
+![Ekran görüntüsü 2023-06-05 004116](https://github.com/Iskenderun-Technical-University/donem-projesi-YakupKutluksaman/assets/115709085/ac8cc7fc-59de-41f7-b6cd-f60452ba87c9)
+
+
